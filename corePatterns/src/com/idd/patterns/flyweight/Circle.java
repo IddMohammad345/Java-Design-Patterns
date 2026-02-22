@@ -1,11 +1,9 @@
 package com.idd.patterns.flyweight;
 
-public class Circle implements Shape {
+public class Circle extends Shape {
 	
 	private String label;
-	private int radius;
-	private String fillColor;
-	private String lineColor;
+	
 	
 
 	public String getLabel() {
@@ -19,43 +17,6 @@ public class Circle implements Shape {
 	}
 
 
-
-	public int getRadius() {
-		return radius;
-	}
-
-
-
-	public void setRadius(int radius) {
-		this.radius = radius;
-	}
-
-
-
-	public String getFillColor() {
-		return fillColor;
-	}
-
-
-
-	public void setFillColor(String fillColor) {
-		this.fillColor = fillColor;
-	}
-
-
-
-	public String getLineColor() {
-		return lineColor;
-	}
-
-
-
-	public void setLineColor(String lineColor) {
-		this.lineColor = lineColor;
-	}
-
-
-
 	public Circle() {
 		label="Circle";
 	}
@@ -63,7 +24,7 @@ public class Circle implements Shape {
 
 
 	@Override
-	public void drow() {
+	public void drow(int radius, String fillColor,String lineColor) {
 		System.out.println("Drowing a "+label+" with radius "+radius+" Fill color "+fillColor+" Line Color "+lineColor);
 	}
 
