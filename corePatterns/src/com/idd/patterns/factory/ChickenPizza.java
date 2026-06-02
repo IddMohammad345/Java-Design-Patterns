@@ -14,7 +14,7 @@ public class ChickenPizza implements Pizza {
 
 	@Override
 	public void cut() {
-		System.out.println("Cutting Veggie Pizza");
+		System.out.println("Cutting Veggie Pizza"); 
 	}
 
 }
